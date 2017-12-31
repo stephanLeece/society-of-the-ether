@@ -1,0 +1,752 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  overflow-x: hidden;
+}
+
+/*
+font-family: 'Almendra Display', cursive;
+font-family: 'Almendra SC', serif;
+font-family: 'Special Elite', cursive;*/
+
+/*img {
+  border: 25px solid transparent;
+  padding:5px;
+ border-image: url(images/frame2.png) 50 round;
+}*/
+
+h1, a, h2, h3, h4, h5, h6 {
+  font-family: 'Almendra SC', serif;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+Button, Link, p, input {
+  font-family: 'Special Elite', cursive;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+button {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 2px;
+  padding: 4px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+textarea {
+  color: black;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+input, button {
+  color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  background-image: url('/images/medWood.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* ---------------------------------------------------------------------------------------- */
+
+@media screen and (max-width:720px) {
+  body {
+    font-size: 8px;
+  }
+}
+
+/* ---------------------------------------------------------------------------------------- */
+
+@media screen and (min-width:721px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* ---------------------------------------------------------------------------------------- */
+
+#root {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+footer {
+  min-height: 5vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid black;
+}
+
+header {
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+}
+
+/* ---------------------------------welcome pages-------------------------------------------------- */
+
+.welcomeLanding {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.welcomeButtons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 85%;
+  left: 0.1%;
+}
+
+.welcomeButtons * {
+  margin: 0 10px;
+}
+
+.welcomeLanding img {
+  width: 100%
+}
+
+.welcomeLanding * {
+  color: black;
+}
+
+.welcomeContent {
+  color: black;
+  min-height: 100%;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+@media screen and (max-width:1050px) {
+  .welcomeContent {}
+
+
+  #errorP {
+    color: white;
+  }
+
+  .wForm * {
+    padding: 1em;
+    font-size: 2em;
+  }
+
+  .wForm {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+}
+
+@media screen and (min-width:1051px) {
+  .welcomeContent {
+    background-image: url('/images/hPaper1.png');
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .welcomeContent * {
+    margin: 1% 0;
+    color: black;
+  }
+
+  .wForm * {
+    padding: .5em;
+    font-size: 1em;
+  }
+
+  .wForm {
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+}
+
+.welcomeContent button {
+  color: black;
+}
+
+.wText {
+  width: 75%;
+  text-align: center;
+}
+
+
+
+
+
+.upp {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto;
+}
+
+.upb {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto auto;
+}
+
+.upb textarea {
+  width: 100%;
+  height: 20vh;
+}
+
+.fileContainer {
+  overflow: hidden;
+  position: relative;
+}
+
+.fileContainer:hover {
+  opacity: 0.8;
+}
+
+.fileContainer [type=file] {
+  cursor: inherit;
+  display: block;
+  font-size: 999px;
+  filter: alpha(opacity=0);
+  min-height: 100%;
+  min-width: 100%;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  top: 0;
+}
+
+.fileContainer {
+  background: white;
+  color: black;
+  border-radius: 2px;
+  padding: 4px;
+  font-family: 'Special Elite', cursive;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.fileContainer [type=file] {
+  /*cursor: pointer;*/
+}
+
+.main {
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 1px solid black;
+}
+
+.content {
+  max-height: 75vh;
+  overflow-y: scroll;
+  width: 60%;
+  flex-grow: 1;
+  background-image: url('/images/purpleGrungeWall.png');
+  border: 20px solid transparent;
+  -webkit-border-image: url(images/frame1.png) 50 round;
+  /* Safari 3.1-5 */
+  -o-border-image: url(images/frame1.png) 50 round;
+  /* Opera 11-12.1 */
+  border-image: url(/images/pipe.png) 150 round;
+}
+
+
+@media screen and (max-width:650px) {
+
+  .profile {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .profile * {
+    margin: 5px;
+    font-size: 1.25em;
+  }
+
+  .profile>div {
+    height: 100%;
+    width: 90%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .profile>div>img {
+    max-width: 75%;
+    max-height: 75%;
+    border: 20px solid transparent;
+    border-image: url('/images/frame2.png') 100 round;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width:651px) {
+  .profile {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .profile>div {
+    height: 100%;
+    width: 50%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .profile>div>img {
+    max-width: 75%;
+    max-height: 50%;
+    border: 20px solid transparent;
+    border-image: url('/images/frame2.png') 100 round;
+    margin-bottom: 10px;
+  }
+
+
+}
+
+
+@media screen and (max-width:650px) {
+
+  .viewProfile {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .viewProfile * {
+    margin: 5px;
+    font-size: 1.25em;
+  }
+
+  .viewProfile>div {
+    height: 100%;
+    width: 90%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .viewProfile>div>img {
+    max-width: 75%;
+    max-height: 75%;
+    border: 20px solid transparent;
+    border-image: url('/images/frame2.png') 100 round;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width:651px) {
+  .viewProfile {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .viewProfile>div {
+    height: 100%;
+    width: 50%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .viewProfile>div>img {
+    max-width: 75%;
+    max-height: 50%;
+    border: 20px solid transparent;
+    border-image: url('/images/frame2.png') 100 round;
+    margin-bottom: 10px;
+  }
+
+
+}
+
+
+
+
+/* .viewProfile {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: center;
+}
+
+.viewProfile>div {
+  height: 100%;
+  width: 50%;
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.viewProfile>div>img {
+  max-width: 75%;
+  max-height: 50%;
+  border: 10px solid transparent;
+  border-image: url('/images/frame2.png') 100 round;
+} */
+
+
+@media screen and (max-width:650px) {
+  .online>div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width:651px) {
+  .online>div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+.online {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+
+
+.online>div>div {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.online img {
+  max-height: 15vh;
+  max-width: 15vw;
+  border: 20px solid transparent;
+  border-image: url('/images/frame2.png') 100 round;
+}
+
+.allFriends {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.allFriends button {
+  font-size: 1.75em;
+}
+
+.friendList {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+}
+
+.friendList div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.friendList div div {
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.listImg {
+  max-height: 15vh;
+  max-width: 15vw;
+  border: 20px solid transparent;
+  border-image: url('/images/frame2.png') 100 round;
+}
+
+.menu {
+  width: 11vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+}
+
+.menu * {
+  margin: 5px 0;
+}
+
+.menuBar {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.menuButtons {
+  height: 9vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: auto;
+  overflow: hidden;
+  transition: all 1s;
+  margin: 0;
+}
+
+.menuButtons div {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18vw;
+  margin: 1vw;
+  text-align: center;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  font-size: 0.8em;
+}
+
+#logoBig {
+  max-height: 8vh;
+  max-width: 18vw;
+}
+
+
+
+#ad {
+  max-width: 95%;
+  max-height: 30%;
+}
+
+@media screen and (max-width:650px) {
+  #chat {
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #chat textarea {
+    width: 95%;
+    height: 20%;
+    padding: 4px;
+  }
+
+  #chatBox {
+    background-color: white;
+    height: 75%;
+    width: 95%;
+    overflow-y: scroll;
+    margin: 5px;
+    padding: 4px;
+  }
+
+
+  #chatBox p {
+    color: black;
+  }
+
+  #chatMessage {
+    max-height: 10vh;
+    font-size: 1.5em;
+    padding: 0.25em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid grey;
+  }
+
+  #chatMessageImg {
+    max-height: 50%;
+    width: 10%;
+    margin-right: 5px;
+  }
+
+  #chatMessageImg img {
+    max-width: 70%;
+    max-height: 70%;
+    border: 1px solid black;
+  }
+
+  #chatMessageText {
+    max-height: 100%;
+    width: 90%;
+  }
+}
+
+@media screen and (min-width:651px) {
+  #chat {
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #chat textarea {
+    width: 90%;
+    height: 20%;
+    padding: 4px;
+  }
+
+  #chatBox {
+    background-color: white;
+    height: 70%;
+    width: 90%;
+    overflow-y: scroll;
+    margin: 5px;
+    padding: 4px;
+  }
+
+
+
+  #chatBox p {
+    color: black;
+  }
+
+  #chatMessage {
+    height: 75px;
+    font-size: 1.5em;
+    padding: 0.25em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid grey;
+  }
+
+  #chatMessageImg {
+    max-height: 95%;
+    width: 10%;
+    margin-right: 5px;
+  }
+
+  #chatMessageImg img {
+    max-width: 95%;
+    max-height: 50%;
+    border: 1px solid black;
+  }
+
+  #chatMessageText {
+    max-height: 100%;
+    width: 90%;
+  }
+}
+
+
+
+.jumbo {
+  border: 1px solid black;
+  height: inherit;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+#footerLogo {
+  height: 4vh;
+}
