@@ -79,8 +79,8 @@ export class Register extends React.Component {
   render() {
     return (<div className='register welcomeContent'>
     <div className='wText'>
-    <h2>Ladies Take Heed!</h2>
-        <p>Upon registering you agree to only use this device under the supervision of a man of good social standing. Anyone found in breach of these conditions should be escorted to the nearest sanitarium for the safety of themselves and those around them.</p>
+    <h2>Residents of the East End, take heed!</h2>
+        <p>Upon registering you agree to only use this device under the supervision of someone of higher social standing. Anyone found in breach of these conditions should be escorted to the nearest sanitarium for the safety of themselves and those around them.</p>
 </div><div className='wForm'>
       <p>Register:</p>
       <input onChange={this.handleChange} name="fname" type="text" placeholder="first name"></input>
