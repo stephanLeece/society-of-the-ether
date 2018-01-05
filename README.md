@@ -1,4 +1,5 @@
-# society-of-the-ether
+# Society of the Ether.
+
 This is a social network i made way back in 1867. ReactJS with Redux. Realtime chat using Socket.io.
 
 ## Technologies
