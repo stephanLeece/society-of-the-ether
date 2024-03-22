@@ -45,7 +45,7 @@
     "spiced-pg": "spicedacademy/spiced-pg",
     "uid-safe": "^2.1.4",
     "webpack": "^4.0.0",
-    "webpack-dev-middleware": "^1.8.4"
+    "webpack-dev-middleware": "^5.3.4"
   },
   "keywords": [],
   "author": "",
